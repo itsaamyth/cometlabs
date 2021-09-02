@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froshlink API</title>
+</head>
+<body>
+    <h2>Welcome to Froshlink API</h2>
+    <h3>The Dedicated Routes are :</h3>
+
+    <h3>Note: Please note the all the routes are protected so you have to first login then get the token from the response and pass that token in Authorisation as 'Bearer [token]' in POSTMAN</h3>
+
+    <h1>Auth Routes -</h1>
+    <h3><a href="/api/auth/signup">POST-/api/auth/signup</a> : User Signup</h3>
+    <h3><a href="/api/auth/login">POST-/api/auth/login</a> : User Login</h3>
+    <h3><a href="/api/auth/google">POST-/api/auth/google</a> : Google Signup & Login</h3>
+    <h3><a href="/api/auth/facebook">POST-/api/auth/facebook</a> : Facebook Signup & Login</h3>
+    <h3><a href="/api/auth/github">POST-/api/auth/github</a> : Github Signup & Login</h3>
+
+    <h3><a href="/api/auth/sendOTP">POST-/api/auth/sendOTP</a> : For sending OTP to user E-mail by giving the E-mail ID</h3>
+    <h3><a href="/api/auth/verifyOTP">POST-/api/auth/verifyOTP</a> : For verifying OTP sent to user E-mail ID</h3>
+    <h3><a href="/api/auth/resetPassword/:userId">POST-/api/auth/resetPassword/:userId</a> : For Password Reset by passing userId in the url or params</h3>    
+
+    <h1>Attendance Routes -</h1>
+    <h3><a href="/api/addStaff">POST-/api/addStaff</a> : Adding Staff to the DB</h3>
+    <h3><a href="/api/showStaffs">POST-/api/showStaffs</a> : Showing List of Staff</h3>
+
+    <h3><a href="/api/addStudent">POST-/api/addStudent</a> : Adding Student to the DB</h3>
+    <h3><a href="/api/showStudents">GET-/api/showStudents</a> : Showing List of Student</h3>
+
+    <h3><a href="/api/addSubject">POST-/api/addSubject</a> : Adding Subject to the DB</h3>
+    <h3><a href="/api/showStudent">GET-/api/showSubjects</a> : Showing List of Subject</h3>
+
+    <h3><a href="/api/markStudentAttendance">POST-/api/markStudentAttendance</a> : Mark Staff Attendance by Giving the Id</h3>
+    <h3><a href="/api/markStaffAttendance">POST-/api/markStaffAttendance</a> : Mark Student Attendance by Giving the Id</h3>
+
+    <h3><a href="/api/showStudentAttendance">GET-/api/showStudentAttendance</a> : Showing Attendance Records of Student by Giving StudentId and SubjectId</h3>
+    <h3><a href="/api/showStaffAttendance">GET-/api/showStaffAttendance</a> : Showing Attendance Records of Staff by Giving StaffId and SubjectId</h3>
+
+    <h3><a href="/api/courses">GET-/api/courses</a> : Getting List of Courses from DB</h3>
+    <h3><a href="/api/courses">POST-/api/courses</a> : Adding any new Course to the DB </h3>
+
+    <h1>Profile Routes -</h1>
+    <h3><a href="/api/createProfile">GET-/api/createProfile</a> : Creating new Profile</h3>
+    <h3><a href="/api/getProfile/:profileId">POST-/api/getProfile/:profileId</a> : Getting data of a Profile by giving profileId</h3>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
