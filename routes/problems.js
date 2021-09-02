@@ -4,7 +4,7 @@ const {addProblemByApi,addProblemBySelf,editProblem, deleteProblem,showProblems}
 const {isAdmin,isLoggedIn} =  require('../controllers/auth')
 
 
-router.get('/showProblems',isLoggedIn,isAdmin,showProblems)
+router.get('/showProblems',showProblems)
 router.post('/addProblemByApi/:problemId',isLoggedIn,isAdmin,addProblemByApi)
 router.post('/addProblemBySelf',isLoggedIn,isAdmin,addProblemBySelf)
 router.put('/editProblem/:problemId',isLoggedIn,isAdmin,editProblem)

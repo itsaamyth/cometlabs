@@ -108,6 +108,7 @@ exports.login = (req, res) => {
               res.status(201).json({
                 message: "User logged in Succesfully",
                 email: email,
+                authLevel:data.authLevel,
                 token: token,
               });
             } else {

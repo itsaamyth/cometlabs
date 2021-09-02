@@ -5,7 +5,7 @@ const {isLoggedIn} =  require('../controllers/auth')
 
 
 router.post('/submitProblem',isLoggedIn,postSubmission)
-router.post('/checkSubmission',isLoggedIn,checkSubmission)
+router.post('/checkSubmission/:submissionId',isLoggedIn,checkSubmission)
 
 
 

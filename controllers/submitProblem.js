@@ -99,7 +99,7 @@ exports.postSubmission = (req, res) => {
 exports.checkSubmission=(req,res)=>{
     var request = require('request');
 
-    const submissionId = req.body.submissionId
+    const submissionId = req.params.submissionId
 // send request
 request({
 	url: 'https://' + endpoint + '/api/v4/submissions/' + submissionId + '?access_token=' + accessToken,
